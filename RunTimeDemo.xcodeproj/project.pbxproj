@@ -13,6 +13,7 @@
 		F7F238172259DC7700F3A455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F238162259DC7700F3A455 /* Assets.xcassets */; };
 		F7F2381A2259DC7700F3A455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F238182259DC7700F3A455 /* LaunchScreen.storyboard */; };
 		F7F2381D2259DC7700F3A455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F2381C2259DC7700F3A455 /* main.m */; };
+		F7F238252259DCDD00F3A455 /* DYSDog.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F238242259DCDD00F3A455 /* DYSDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		F7F238192259DC7700F3A455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7F2381B2259DC7700F3A455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7F2381C2259DC7700F3A455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7F238232259DCDD00F3A455 /* DYSDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYSDog.h; sourceTree = "<group>"; };
+		F7F238242259DCDD00F3A455 /* DYSDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYSDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				F7F2380E2259DC7300F3A455 /* AppDelegate.m */,
 				F7F238102259DC7300F3A455 /* ViewController.h */,
 				F7F238112259DC7300F3A455 /* ViewController.m */,
+				F7F238232259DCDD00F3A455 /* DYSDog.h */,
+				F7F238242259DCDD00F3A455 /* DYSDog.m */,
 				F7F238132259DC7300F3A455 /* Main.storyboard */,
 				F7F238162259DC7700F3A455 /* Assets.xcassets */,
 				F7F238182259DC7700F3A455 /* LaunchScreen.storyboard */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F238122259DC7300F3A455 /* ViewController.m in Sources */,
+				F7F238252259DCDD00F3A455 /* DYSDog.m in Sources */,
 				F7F2381D2259DC7700F3A455 /* main.m in Sources */,
 				F7F2380F2259DC7300F3A455 /* AppDelegate.m in Sources */,
 			);
