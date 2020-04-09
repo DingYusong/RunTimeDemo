@@ -47,7 +47,7 @@
     
     /*
      注：object_getClass 获取的是isa指针，实例对象指的是类对象。 类对象指的是元类对象。
-     class_getSuperclass 获取的是superclass指针, 示例对象灭有superclass，类对象和元类对象都有。
+     class_getSuperclass 获取的是superclass指针, 实例对象没有superclass，类对象和元类对象都有。
      */
     /**
      2019-04-07 15:25:39.927355+0800 RunTimeDemo[82841:6021365] animal
