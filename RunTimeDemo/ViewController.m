@@ -25,30 +25,69 @@
     
     self.title = @"LayerExplore";
     self.dataSourceArray = @[
-                             @{
-                                 @"title":@"对象，类，元类",
-                                 @"page":@"DYSDemo01ViewController"
-                                 },
-                             @{
-                                 @"title":@"成员变量，属性，方法，协议",
-                                 @"page":@"DYSDemo02ViewController"
-                                 },
-                            @{
-                                @"title":@"消息转发",
-                                @"page":@"DYSDemo02ViewController"
-                                },
-                            ];
-    self.tableView.rowHeight = 50;
-
-    
+        @{
+            @"title":@"实例-object/instance",
+            @"array":@[
+                    @{
+                        @"title":@"对象，类，元类",
+                        @"page":@"DYSDemo01ViewController"
+                    }
+            ]
+        },
+        @{
+            @"title":@"类-class",
+            @"array":@[
+                    @{
+                        @"title":@"对象，类，元类",
+                        @"page":@"DYSDemo01ViewController"
+                    }
+            ]
+        },
+        @{
+            @"title":@"元类-metaClass",
+            @"array":@[
+                    @{
+                        @"title":@"对象，类，元类",
+                        @"page":@"DYSDemo01ViewController"
+                    }
+            ]
+        },
+        @{
+            @"title":@"objc/runtime.h",
+            @"array":@[
+                    @{
+                        @"title":@"成员变量，属性，方法，协议",
+                        @"page":@"DYSDemo02ViewController"
+                    }
+            ]
+        },
+        @{
+            @"title":@"objc/message.h",
+            @"array":@[
+                    @{
+                        @"title":@"消息转发",
+                        @"page":@"DYSDemo02ViewController"
+                    }
+            ]
+            
+        },
+    ];
+//    self.tableView.rowHeight = 50;
+    self.tableView.tableFooterView = [UIView new];
 }
 
 
 
 #pragma mark - UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return self.dataSourceArray.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSDictionary *item = self.dataSourceArray[section];
+    NSArray *sectionArray = [item objectForKey:@"array"];
+    return sectionArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -56,23 +95,27 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
     }
-    
-    NSDictionary *dict = [self.dataSourceArray objectAtIndex:(self.dataSourceArray.count - indexPath.row - 1)];
+    NSDictionary *item = self.dataSourceArray[indexPath.section];
+    NSArray *sectionArray = [item objectForKey:@"array"];
+    NSDictionary *dict = [sectionArray objectAtIndex:indexPath.row];
     cell.textLabel.text = [dict objectForKey:@"title"];
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSDictionary *item = self.dataSourceArray[section];
+    return [item objectForKey:@"title"];
 }
 
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *dict = [self.dataSourceArray objectAtIndex:(self.dataSourceArray.count - indexPath.row - 1)];
+    NSDictionary *item = self.dataSourceArray[indexPath.section];
+    NSArray *sectionArray = [item objectForKey:@"array"];
+    NSDictionary *dict = [sectionArray objectAtIndex:indexPath.row];
     NSString *classString = [dict objectForKey:@"page"];
     UIViewController *vc = [NSClassFromString(classString) new];
-//    NSLog(@"2018-001");
-//    vc.view.backgroundColor = [UIColor whiteColor];
-//    NSLog(@"2018-002");
     [self.navigationController pushViewController:vc animated:YES];
-//    NSLog(@"2018-003");
 }
 
 
