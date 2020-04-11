@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		F73EB5AE243F3BDA00239891 /* DYSDemo01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73EB5AC243F3BDA00239891 /* DYSDemo01ViewController.m */; };
 		F73EB5AF243F3BDA00239891 /* DYSDemo01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73EB5AD243F3BDA00239891 /* DYSDemo01ViewController.xib */; };
+		F753E7822441B5FA00A8A9BB /* DYSDog2.m in Sources */ = {isa = PBXBuildFile; fileRef = F753E7812441B5FA00A8A9BB /* DYSDog2.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F753E7862441BA9F00A8A9BB /* DYSMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F753E7842441BA9F00A8A9BB /* DYSMessageViewController.m */; };
+		F753E7872441BA9F00A8A9BB /* DYSMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F753E7852441BA9F00A8A9BB /* DYSMessageViewController.xib */; };
+		F77BB8242441BD9C00A68845 /* DYSCat.m in Sources */ = {isa = PBXBuildFile; fileRef = F77BB8232441BD9C00A68845 /* DYSCat.m */; };
+		F77BB8272441C07700A68845 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F77BB8252441C07700A68845 /* Person.m */; };
+		F77BB82A2441C1BE00A68845 /* DYSAssistObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F77BB8292441C1BE00A68845 /* DYSAssistObject.m */; };
+		F77BB82D2441CB0000A68845 /* DYSCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77BB82C2441CB0000A68845 /* DYSCodingViewController.m */; };
+		F77BB8312441CBDC00A68845 /* DYSCodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77BB8302441CBDC00A68845 /* DYSCodingViewController.xib */; };
+		F77BB8362441D27F00A68845 /* DYSModelShiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77BB8342441D27F00A68845 /* DYSModelShiftViewController.m */; };
+		F77BB8372441D27F00A68845 /* DYSModelShiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77BB8352441D27F00A68845 /* DYSModelShiftViewController.xib */; };
 		F7F2380F2259DC7300F3A455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F2380E2259DC7300F3A455 /* AppDelegate.m */; };
 		F7F238122259DC7300F3A455 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F238112259DC7300F3A455 /* ViewController.m */; };
 		F7F238152259DC7300F3A455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F238132259DC7300F3A455 /* Main.storyboard */; };
@@ -22,6 +32,23 @@
 		F73EB5AB243F3BDA00239891 /* DYSDemo01ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo01ViewController.h; sourceTree = "<group>"; };
 		F73EB5AC243F3BDA00239891 /* DYSDemo01ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo01ViewController.m; sourceTree = "<group>"; };
 		F73EB5AD243F3BDA00239891 /* DYSDemo01ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSDemo01ViewController.xib; sourceTree = "<group>"; };
+		F753E7802441B5FA00A8A9BB /* DYSDog2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDog2.h; sourceTree = "<group>"; };
+		F753E7812441B5FA00A8A9BB /* DYSDog2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDog2.m; sourceTree = "<group>"; };
+		F753E7832441BA9F00A8A9BB /* DYSMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSMessageViewController.h; sourceTree = "<group>"; };
+		F753E7842441BA9F00A8A9BB /* DYSMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSMessageViewController.m; sourceTree = "<group>"; };
+		F753E7852441BA9F00A8A9BB /* DYSMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSMessageViewController.xib; sourceTree = "<group>"; };
+		F77BB8222441BD9C00A68845 /* DYSCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSCat.h; sourceTree = "<group>"; };
+		F77BB8232441BD9C00A68845 /* DYSCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSCat.m; sourceTree = "<group>"; };
+		F77BB8252441C07700A68845 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F77BB8262441C07700A68845 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F77BB8282441C1BE00A68845 /* DYSAssistObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSAssistObject.h; sourceTree = "<group>"; };
+		F77BB8292441C1BE00A68845 /* DYSAssistObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSAssistObject.m; sourceTree = "<group>"; };
+		F77BB82B2441CB0000A68845 /* DYSCodingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSCodingViewController.h; sourceTree = "<group>"; };
+		F77BB82C2441CB0000A68845 /* DYSCodingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSCodingViewController.m; sourceTree = "<group>"; };
+		F77BB8302441CBDC00A68845 /* DYSCodingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSCodingViewController.xib; sourceTree = "<group>"; };
+		F77BB8332441D27F00A68845 /* DYSModelShiftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSModelShiftViewController.h; sourceTree = "<group>"; };
+		F77BB8342441D27F00A68845 /* DYSModelShiftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSModelShiftViewController.m; sourceTree = "<group>"; };
+		F77BB8352441D27F00A68845 /* DYSModelShiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSModelShiftViewController.xib; sourceTree = "<group>"; };
 		F7F2380A2259DC7300F3A455 /* RunTimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F2380D2259DC7300F3A455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7F2380E2259DC7300F3A455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,6 +74,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F753E77A2441AF9800A8A9BB /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				F73EB5AB243F3BDA00239891 /* DYSDemo01ViewController.h */,
+				F73EB5AC243F3BDA00239891 /* DYSDemo01ViewController.m */,
+				F73EB5AD243F3BDA00239891 /* DYSDemo01ViewController.xib */,
+				F7F238232259DCDD00F3A455 /* DYSDog.h */,
+				F7F238242259DCDD00F3A455 /* DYSDog.m */,
+				F753E7802441B5FA00A8A9BB /* DYSDog2.h */,
+				F753E7812441B5FA00A8A9BB /* DYSDog2.m */,
+				F77BB8262441C07700A68845 /* Person.h */,
+				F77BB8252441C07700A68845 /* Person.m */,
+				F77BB8282441C1BE00A68845 /* DYSAssistObject.h */,
+				F77BB8292441C1BE00A68845 /* DYSAssistObject.m */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		F753E7882441BAA500A8A9BB /* message */ = {
+			isa = PBXGroup;
+			children = (
+				F753E7832441BA9F00A8A9BB /* DYSMessageViewController.h */,
+				F753E7842441BA9F00A8A9BB /* DYSMessageViewController.m */,
+				F753E7852441BA9F00A8A9BB /* DYSMessageViewController.xib */,
+				F77BB8222441BD9C00A68845 /* DYSCat.h */,
+				F77BB8232441BD9C00A68845 /* DYSCat.m */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		F77BB82E2441CB1900A68845 /* 应用 */ = {
+			isa = PBXGroup;
+			children = (
+				F77BB8322441D26F00A68845 /* 字典和模型转换 */,
+				F77BB82F2441CB2300A68845 /* 自动归档 */,
+			);
+			path = "应用";
+			sourceTree = "<group>";
+		};
+		F77BB82F2441CB2300A68845 /* 自动归档 */ = {
+			isa = PBXGroup;
+			children = (
+				F77BB82B2441CB0000A68845 /* DYSCodingViewController.h */,
+				F77BB82C2441CB0000A68845 /* DYSCodingViewController.m */,
+				F77BB8302441CBDC00A68845 /* DYSCodingViewController.xib */,
+			);
+			path = "自动归档";
+			sourceTree = "<group>";
+		};
+		F77BB8322441D26F00A68845 /* 字典和模型转换 */ = {
+			isa = PBXGroup;
+			children = (
+				F77BB8332441D27F00A68845 /* DYSModelShiftViewController.h */,
+				F77BB8342441D27F00A68845 /* DYSModelShiftViewController.m */,
+				F77BB8352441D27F00A68845 /* DYSModelShiftViewController.xib */,
+			);
+			path = "字典和模型转换";
+			sourceTree = "<group>";
+		};
 		F7F238012259DC7300F3A455 = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +156,9 @@
 				F7F2380E2259DC7300F3A455 /* AppDelegate.m */,
 				F7F238102259DC7300F3A455 /* ViewController.h */,
 				F7F238112259DC7300F3A455 /* ViewController.m */,
-				F73EB5AB243F3BDA00239891 /* DYSDemo01ViewController.h */,
-				F73EB5AC243F3BDA00239891 /* DYSDemo01ViewController.m */,
-				F73EB5AD243F3BDA00239891 /* DYSDemo01ViewController.xib */,
-				F7F238232259DCDD00F3A455 /* DYSDog.h */,
-				F7F238242259DCDD00F3A455 /* DYSDog.m */,
+				F77BB82E2441CB1900A68845 /* 应用 */,
+				F753E77A2441AF9800A8A9BB /* runtime */,
+				F753E7882441BAA500A8A9BB /* message */,
 				F7F238132259DC7300F3A455 /* Main.storyboard */,
 				F7F238162259DC7700F3A455 /* Assets.xcassets */,
 				F7F238182259DC7700F3A455 /* LaunchScreen.storyboard */,
@@ -144,6 +228,9 @@
 				F7F2381A2259DC7700F3A455 /* LaunchScreen.storyboard in Resources */,
 				F73EB5AF243F3BDA00239891 /* DYSDemo01ViewController.xib in Resources */,
 				F7F238172259DC7700F3A455 /* Assets.xcassets in Resources */,
+				F77BB8312441CBDC00A68845 /* DYSCodingViewController.xib in Resources */,
+				F753E7872441BA9F00A8A9BB /* DYSMessageViewController.xib in Resources */,
+				F77BB8372441D27F00A68845 /* DYSModelShiftViewController.xib in Resources */,
 				F7F238152259DC7300F3A455 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,10 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F753E7822441B5FA00A8A9BB /* DYSDog2.m in Sources */,
+				F753E7862441BA9F00A8A9BB /* DYSMessageViewController.m in Sources */,
+				F77BB82D2441CB0000A68845 /* DYSCodingViewController.m in Sources */,
+				F77BB82A2441C1BE00A68845 /* DYSAssistObject.m in Sources */,
 				F7F238122259DC7300F3A455 /* ViewController.m in Sources */,
+				F77BB8242441BD9C00A68845 /* DYSCat.m in Sources */,
 				F7F238252259DCDD00F3A455 /* DYSDog.m in Sources */,
 				F7F2381D2259DC7700F3A455 /* main.m in Sources */,
+				F77BB8272441C07700A68845 /* Person.m in Sources */,
 				F7F2380F2259DC7300F3A455 /* AppDelegate.m in Sources */,
+				F77BB8362441D27F00A68845 /* DYSModelShiftViewController.m in Sources */,
 				F73EB5AE243F3BDA00239891 /* DYSDemo01ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

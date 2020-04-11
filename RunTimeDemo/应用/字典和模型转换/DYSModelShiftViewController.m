@@ -1,25 +1,22 @@
 //
-//  DYSDemo01ViewController.m
+//  DYSModelShiftViewController.m
 //  RunTimeDemo
 //
-//  Created by 丁玉松 on 2020/4/9.
+//  Created by 丁玉松 on 2020/4/11.
 //  Copyright © 2020 丁玉松. All rights reserved.
 //
 
-#import "DYSDemo01ViewController.h"
-#import "DYSDog.h"
+#import "DYSModelShiftViewController.h"
 
-@interface DYSDemo01ViewController ()
+@interface DYSModelShiftViewController ()
 
 @end
 
-@implementation DYSDemo01ViewController
+@implementation DYSModelShiftViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [DYSDog specie];
-    [[DYSDog new] learnRunning];
 }
 
 /*

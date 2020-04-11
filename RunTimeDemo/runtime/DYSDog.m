@@ -13,38 +13,37 @@
 
 + (void)specie {
     NSLog(@"animal");
-    
-    
-    NSLog(@"%@",self);
-    NSLog(@"%@",[self class]);
-    NSLog(@"%@",object_getClass(self));
-    NSLog(@"%@",class_getSuperclass(self));
-    
+
+    NSLog(@"%@", self);
+    NSLog(@"%@", [self class]);
+    NSLog(@"%@", object_getClass(self));
+    NSLog(@"%@", class_getSuperclass(self));
+
     NSLog(@"------object_getClass------");
-    NSLog(@"%@",object_getClass(self));
-    NSLog(@"%@",object_getClass([self class]));//2. [self class] 只是获得当前对象的类，和 object_getClass 不同。object_getClass 或得的是isa指针，可能是类，也可能是元类。
-    NSLog(@"%@",object_getClass(object_getClass(self)));
-    NSLog(@"%@",object_getClass(object_getClass(object_getClass(self)))); //3. NSObject 的isa指针（object_getClass） 指向自己
-    NSLog(@"%@",object_getClass(object_getClass(object_getClass(object_getClass(self)))));
-    
-    NSLog(@"------class_getSuperclass------");// 3. NSObject 的superclass 是nil
-    NSLog(@"%@",class_getSuperclass(self));
-    NSLog(@"%@",class_getSuperclass(class_getSuperclass(self)));
-    NSLog(@"%@",class_getSuperclass(class_getSuperclass(class_getSuperclass(self))));
-    NSLog(@"%@",class_getSuperclass(class_getSuperclass(class_getSuperclass(class_getSuperclass(self)))));
-    
+    NSLog(@"%@", object_getClass(self));
+    NSLog(@"%@", object_getClass([self class]));  //2. [self class] 只是获得当前对象的类，和 object_getClass 不同。object_getClass 或得的是isa指针，可能是类，也可能是元类。
+    NSLog(@"%@", object_getClass(object_getClass(self)));
+    NSLog(@"%@", object_getClass(object_getClass(object_getClass(self))));  //3. NSObject 的isa指针（object_getClass） 指向自己
+    NSLog(@"%@", object_getClass(object_getClass(object_getClass(object_getClass(self)))));
+
+    NSLog(@"------class_getSuperclass------");  // 3. NSObject 的superclass 是nil
+    NSLog(@"%@", class_getSuperclass(self));
+    NSLog(@"%@", class_getSuperclass(class_getSuperclass(self)));
+    NSLog(@"%@", class_getSuperclass(class_getSuperclass(class_getSuperclass(self))));
+    NSLog(@"%@", class_getSuperclass(class_getSuperclass(class_getSuperclass(class_getSuperclass(self)))));
+
     NSLog(@"------object_isClass------");
-    NSLog(@"%d",object_isClass(self));
-    NSLog(@"%d",object_isClass([self class]));
-    NSLog(@"%d",object_isClass(object_getClass(self)));//1. 元类也是类 所以 object_isClass 都为true。反之类不是元类
-    NSLog(@"%d",object_isClass(class_getSuperclass(self)));
-    
+    NSLog(@"%d", object_isClass(self));
+    NSLog(@"%d", object_isClass([self class]));
+    NSLog(@"%d", object_isClass(object_getClass(self)));  //1. 元类也是类 所以 object_isClass 都为true。反之类不是元类
+    NSLog(@"%d", object_isClass(class_getSuperclass(self)));
+
     NSLog(@"------class_isMetaClass------");
-    NSLog(@"%d",class_isMetaClass(self));
-    NSLog(@"%d",class_isMetaClass([self class]));
-    NSLog(@"%d",class_isMetaClass(object_getClass(self)));
-    NSLog(@"%d",class_isMetaClass(class_getSuperclass(self)));
-    
+    NSLog(@"%d", class_isMetaClass(self));
+    NSLog(@"%d", class_isMetaClass([self class]));
+    NSLog(@"%d", class_isMetaClass(object_getClass(self)));
+    NSLog(@"%d", class_isMetaClass(class_getSuperclass(self)));
+
     /*
      注：object_getClass 获取的是isa指针，实例对象指的是类对象。 类对象指的是元类对象。
      class_getSuperclass 获取的是superclass指针, 实例对象没有superclass，类对象和元类对象都有。
@@ -78,45 +77,42 @@
      2019-04-07 15:25:39.962436+0800 RunTimeDemo[82841:6021365] 0
      2019-04-07 15:25:39.962506+0800 RunTimeDemo[82841:6021365] -----
      */
-    
-    
-    NSLog(@"-----");
 
-    
+    NSLog(@"-----");
 }
 
 - (void)learnRunning {
     NSLog(@"练习跑步");
-    
-    NSLog(@"%@",self);
-    NSLog(@"%@",[self class]);
-    NSLog(@"%@",object_getClass(self));
-    NSLog(@"%@",class_getSuperclass(self));
-    
-    NSLog(@"------object_getClass------");// 4. 一个类在内存中有3种形态以 DYSDog为例。DYSDog的实例，DYSDog的类，DYSDog的元类。
-    NSLog(@"%@",object_getClass(self));
-    NSLog(@"%@",object_getClass(object_getClass(self)));
-    NSLog(@"%@",object_getClass(object_getClass(object_getClass(self))));
-    NSLog(@"%@",object_getClass(object_getClass(object_getClass(object_getClass(self)))));
-    
+
+    NSLog(@"%@", self);
+    NSLog(@"%@", [self class]);
+    NSLog(@"%@", object_getClass(self));
+    NSLog(@"%@", class_getSuperclass(self));
+
+    NSLog(@"------object_getClass------");  // 4. 一个类在内存中有3种形态以 DYSDog为例。DYSDog的实例，DYSDog的类，DYSDog的元类。
+    NSLog(@"%@", object_getClass(self));
+    NSLog(@"%@", object_getClass(object_getClass(self)));
+    NSLog(@"%@", object_getClass(object_getClass(object_getClass(self))));
+    NSLog(@"%@", object_getClass(object_getClass(object_getClass(object_getClass(self)))));
+
     NSLog(@"------class_getSuperclass------");
-    NSLog(@"%@",class_getSuperclass(self));
-    NSLog(@"%@",class_getSuperclass(class_getSuperclass(self)));
-    NSLog(@"%@",class_getSuperclass(class_getSuperclass(class_getSuperclass(self))));
-    NSLog(@"%@",class_getSuperclass(class_getSuperclass(class_getSuperclass(class_getSuperclass(self)))));
-    
+    NSLog(@"%@", class_getSuperclass(self));
+    NSLog(@"%@", class_getSuperclass(class_getSuperclass(self)));
+    NSLog(@"%@", class_getSuperclass(class_getSuperclass(class_getSuperclass(self))));
+    NSLog(@"%@", class_getSuperclass(class_getSuperclass(class_getSuperclass(class_getSuperclass(self)))));
+
     NSLog(@"------object_isClass------");
-    NSLog(@"%d",object_isClass(self));
-    NSLog(@"%d",object_isClass([self class]));
-    NSLog(@"%d",object_isClass(object_getClass(self)));
-    NSLog(@"%d",object_isClass(class_getSuperclass(self)));
-    
+    NSLog(@"%d", object_isClass(self));
+    NSLog(@"%d", object_isClass([self class]));
+    NSLog(@"%d", object_isClass(object_getClass(self)));
+    NSLog(@"%d", object_isClass(class_getSuperclass(self)));
+
     NSLog(@"------class_isMetaClass------");
     //    NSLog(@"%d",class_isMetaClass(self)); crash
-    NSLog(@"%d",class_isMetaClass([self class]));
-    NSLog(@"%d",class_isMetaClass(object_getClass(self)));
-    NSLog(@"%d",class_isMetaClass(object_getClass(object_getClass(self))));
-    NSLog(@"%d",class_isMetaClass(class_getSuperclass(self)));
+    NSLog(@"%d", class_isMetaClass([self class]));
+    NSLog(@"%d", class_isMetaClass(object_getClass(self)));
+    NSLog(@"%d", class_isMetaClass(object_getClass(object_getClass(self))));
+    NSLog(@"%d", class_isMetaClass(class_getSuperclass(self)));
     /*
      2019-04-07 15:25:39.962608+0800 RunTimeDemo[82841:6021365] 练习跑步
      2019-04-07 15:25:39.962758+0800 RunTimeDemo[82841:6021365] <DYSDog: 0x600001fdacd0>
@@ -144,7 +140,6 @@
      2019-04-07 15:25:39.968798+0800 RunTimeDemo[82841:6021365] 1
      2019-04-07 15:25:39.969005+0800 RunTimeDemo[82841:6021365] 0
      */
-
 }
 
 @end
