@@ -19,6 +19,11 @@
 		F77BB8312441CBDC00A68845 /* DYSCodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77BB8302441CBDC00A68845 /* DYSCodingViewController.xib */; };
 		F77BB8362441D27F00A68845 /* DYSModelShiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77BB8342441D27F00A68845 /* DYSModelShiftViewController.m */; };
 		F77BB8372441D27F00A68845 /* DYSModelShiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77BB8352441D27F00A68845 /* DYSModelShiftViewController.xib */; };
+		F7E9AB89244594D70098D947 /* DYSMessageAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E9AB85244594D70098D947 /* DYSMessageAnimal.m */; };
+		F7E9AB8A244594D70098D947 /* DYSMessageDog.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E9AB86244594D70098D947 /* DYSMessageDog.m */; };
+		F7E9AB8B244594D70098D947 /* DYSMessageCat.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E9AB87244594D70098D947 /* DYSMessageCat.m */; };
+		F7E9AB8F244596B50098D947 /* DYSMessageSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E9AB8D244596B50098D947 /* DYSMessageSendViewController.m */; };
+		F7E9AB90244596B50098D947 /* DYSMessageSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E9AB8E244596B50098D947 /* DYSMessageSendViewController.xib */; };
 		F7F2380F2259DC7300F3A455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F2380E2259DC7300F3A455 /* AppDelegate.m */; };
 		F7F238122259DC7300F3A455 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F238112259DC7300F3A455 /* ViewController.m */; };
 		F7F238152259DC7300F3A455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F238132259DC7300F3A455 /* Main.storyboard */; };
@@ -49,6 +54,15 @@
 		F77BB8332441D27F00A68845 /* DYSModelShiftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSModelShiftViewController.h; sourceTree = "<group>"; };
 		F77BB8342441D27F00A68845 /* DYSModelShiftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSModelShiftViewController.m; sourceTree = "<group>"; };
 		F77BB8352441D27F00A68845 /* DYSModelShiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSModelShiftViewController.xib; sourceTree = "<group>"; };
+		F7E9AB83244594D70098D947 /* DYSMessageAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYSMessageAnimal.h; sourceTree = "<group>"; };
+		F7E9AB84244594D70098D947 /* DYSMessageDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYSMessageDog.h; sourceTree = "<group>"; };
+		F7E9AB85244594D70098D947 /* DYSMessageAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYSMessageAnimal.m; sourceTree = "<group>"; };
+		F7E9AB86244594D70098D947 /* DYSMessageDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYSMessageDog.m; sourceTree = "<group>"; };
+		F7E9AB87244594D70098D947 /* DYSMessageCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYSMessageCat.m; sourceTree = "<group>"; };
+		F7E9AB88244594D70098D947 /* DYSMessageCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYSMessageCat.h; sourceTree = "<group>"; };
+		F7E9AB8C244596B50098D947 /* DYSMessageSendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSMessageSendViewController.h; sourceTree = "<group>"; };
+		F7E9AB8D244596B50098D947 /* DYSMessageSendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSMessageSendViewController.m; sourceTree = "<group>"; };
+		F7E9AB8E244596B50098D947 /* DYSMessageSendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSMessageSendViewController.xib; sourceTree = "<group>"; };
 		F7F2380A2259DC7300F3A455 /* RunTimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F2380D2259DC7300F3A455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7F2380E2259DC7300F3A455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,9 +109,18 @@
 		F753E7882441BAA500A8A9BB /* message */ = {
 			isa = PBXGroup;
 			children = (
+				F7E9AB83244594D70098D947 /* DYSMessageAnimal.h */,
+				F7E9AB85244594D70098D947 /* DYSMessageAnimal.m */,
+				F7E9AB88244594D70098D947 /* DYSMessageCat.h */,
+				F7E9AB87244594D70098D947 /* DYSMessageCat.m */,
+				F7E9AB84244594D70098D947 /* DYSMessageDog.h */,
+				F7E9AB86244594D70098D947 /* DYSMessageDog.m */,
 				F753E7832441BA9F00A8A9BB /* DYSMessageViewController.h */,
 				F753E7842441BA9F00A8A9BB /* DYSMessageViewController.m */,
 				F753E7852441BA9F00A8A9BB /* DYSMessageViewController.xib */,
+				F7E9AB8C244596B50098D947 /* DYSMessageSendViewController.h */,
+				F7E9AB8D244596B50098D947 /* DYSMessageSendViewController.m */,
+				F7E9AB8E244596B50098D947 /* DYSMessageSendViewController.xib */,
 				F77BB8222441BD9C00A68845 /* DYSCat.h */,
 				F77BB8232441BD9C00A68845 /* DYSCat.m */,
 			);
@@ -231,6 +254,7 @@
 				F77BB8312441CBDC00A68845 /* DYSCodingViewController.xib in Resources */,
 				F753E7872441BA9F00A8A9BB /* DYSMessageViewController.xib in Resources */,
 				F77BB8372441D27F00A68845 /* DYSModelShiftViewController.xib in Resources */,
+				F7E9AB90244596B50098D947 /* DYSMessageSendViewController.xib in Resources */,
 				F7F238152259DC7300F3A455 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,14 +267,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F753E7822441B5FA00A8A9BB /* DYSDog2.m in Sources */,
+				F7E9AB89244594D70098D947 /* DYSMessageAnimal.m in Sources */,
 				F753E7862441BA9F00A8A9BB /* DYSMessageViewController.m in Sources */,
 				F77BB82D2441CB0000A68845 /* DYSCodingViewController.m in Sources */,
 				F77BB82A2441C1BE00A68845 /* DYSAssistObject.m in Sources */,
+				F7E9AB8A244594D70098D947 /* DYSMessageDog.m in Sources */,
 				F7F238122259DC7300F3A455 /* ViewController.m in Sources */,
+				F7E9AB8F244596B50098D947 /* DYSMessageSendViewController.m in Sources */,
 				F77BB8242441BD9C00A68845 /* DYSCat.m in Sources */,
 				F7F238252259DCDD00F3A455 /* DYSDog.m in Sources */,
 				F7F2381D2259DC7700F3A455 /* main.m in Sources */,
 				F77BB8272441C07700A68845 /* Person.m in Sources */,
+				F7E9AB8B244594D70098D947 /* DYSMessageCat.m in Sources */,
 				F7F2380F2259DC7300F3A455 /* AppDelegate.m in Sources */,
 				F77BB8362441D27F00A68845 /* DYSModelShiftViewController.m in Sources */,
 				F73EB5AE243F3BDA00239891 /* DYSDemo01ViewController.m in Sources */,

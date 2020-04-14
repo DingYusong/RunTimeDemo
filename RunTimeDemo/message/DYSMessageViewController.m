@@ -9,6 +9,8 @@
 #import "DYSMessageViewController.h"
 #import <objc/message.h>
 #import "DYSCat.h"
+#import "DYSMessageSendViewController.h"
+
 
 @interface DYSMessageViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -53,6 +55,9 @@
         },
         @{
             @"title": @"objc_msgSend_fp2ret",
+        },
+        @{
+            @"title": @"消息转发",
         },
     ];
     self.tableView.tableFooterView = [UIView new];
@@ -112,6 +117,15 @@
             break;
     }
 
-
+    
+        
+    NSDictionary *dict = self.dataSourceArray[indexPath.row];
+    NSString *title = [dict objectForKey:@"title"];
+    if ([title isEqualToString:@"消息转发"]) {
+        //
+        DYSMessageSendViewController *vc = [DYSMessageSendViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }
 }
 @end

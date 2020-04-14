@@ -57,6 +57,8 @@
     }
     NSDictionary *dict = self.dataSourceArray[indexPath.row];
     cell.textLabel.text = [dict objectForKey:@"title"];
+    cell.textLabel.font = [UIFont systemFontOfSize:13];
+
     return cell;
 }
 
