@@ -63,7 +63,7 @@
 		F7E9AB8C244596B50098D947 /* DYSMessageSendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSMessageSendViewController.h; sourceTree = "<group>"; };
 		F7E9AB8D244596B50098D947 /* DYSMessageSendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSMessageSendViewController.m; sourceTree = "<group>"; };
 		F7E9AB8E244596B50098D947 /* DYSMessageSendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSMessageSendViewController.xib; sourceTree = "<group>"; };
-		F7F2380A2259DC7300F3A455 /* RunTimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F2380A2259DC7300F3A455 /* dys_ios_runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dys_ios_runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F2380D2259DC7300F3A455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7F2380E2259DC7300F3A455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F7F238102259DC7300F3A455 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		F7F238012259DC7300F3A455 = {
 			isa = PBXGroup;
 			children = (
-				F7F2380C2259DC7300F3A455 /* RunTimeDemo */,
+				F7F2380C2259DC7300F3A455 /* dys_ios_runtime */,
 				F7F2380B2259DC7300F3A455 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,12 +167,12 @@
 		F7F2380B2259DC7300F3A455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7F2380A2259DC7300F3A455 /* RunTimeDemo.app */,
+				F7F2380A2259DC7300F3A455 /* dys_ios_runtime.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7F2380C2259DC7300F3A455 /* RunTimeDemo */ = {
+		F7F2380C2259DC7300F3A455 /* dys_ios_runtime */ = {
 			isa = PBXGroup;
 			children = (
 				F7F2380D2259DC7300F3A455 /* AppDelegate.h */,
@@ -188,15 +188,15 @@
 				F7F2381B2259DC7700F3A455 /* Info.plist */,
 				F7F2381C2259DC7700F3A455 /* main.m */,
 			);
-			path = RunTimeDemo;
+			path = dys_ios_runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F7F238092259DC7300F3A455 /* RunTimeDemo */ = {
+		F7F238092259DC7300F3A455 /* dys_ios_runtime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7F238202259DC7700F3A455 /* Build configuration list for PBXNativeTarget "RunTimeDemo" */;
+			buildConfigurationList = F7F238202259DC7700F3A455 /* Build configuration list for PBXNativeTarget "dys_ios_runtime" */;
 			buildPhases = (
 				F7F238062259DC7300F3A455 /* Sources */,
 				F7F238072259DC7300F3A455 /* Frameworks */,
@@ -206,9 +206,9 @@
 			);
 			dependencies = (
 			);
-			name = RunTimeDemo;
+			name = dys_ios_runtime;
 			productName = RunTimeDemo;
-			productReference = F7F2380A2259DC7300F3A455 /* RunTimeDemo.app */;
+			productReference = F7F2380A2259DC7300F3A455 /* dys_ios_runtime.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F7F238052259DC7300F3A455 /* Build configuration list for PBXProject "RunTimeDemo" */;
+			buildConfigurationList = F7F238052259DC7300F3A455 /* Build configuration list for PBXProject "dys_ios_runtime" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,7 +238,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7F238092259DC7300F3A455 /* RunTimeDemo */,
+				F7F238092259DC7300F3A455 /* dys_ios_runtime */,
 			);
 		};
 /* End PBXProject section */
@@ -424,13 +424,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RunTimeDemo/Info.plist;
+				INFOPLIST_FILE = dys_ios_runtime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbanker.RunTimeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dys.runtimedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,13 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RunTimeDemo/Info.plist;
+				INFOPLIST_FILE = dys_ios_runtime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbanker.RunTimeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dys.runtimedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,7 +456,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F7F238052259DC7300F3A455 /* Build configuration list for PBXProject "RunTimeDemo" */ = {
+		F7F238052259DC7300F3A455 /* Build configuration list for PBXProject "dys_ios_runtime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7F2381E2259DC7700F3A455 /* Debug */,
@@ -465,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7F238202259DC7700F3A455 /* Build configuration list for PBXNativeTarget "RunTimeDemo" */ = {
+		F7F238202259DC7700F3A455 /* Build configuration list for PBXNativeTarget "dys_ios_runtime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7F238212259DC7700F3A455 /* Debug */,
