@@ -40,6 +40,11 @@
             @"title": @"应用-字典和模型转换（NSDictionary，NSObject）",
             @"page": @"DYSModelShiftViewController"
         },
+        @{
+            @"title": @"获得属性类型（NSDictionary，NSObject）",
+            @"page": @"DYSGetPropertyTypeViewController"
+        },
+        
     ];
     self.tableView.tableFooterView = [UIView new];
 }
